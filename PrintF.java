@@ -12,11 +12,7 @@ public class PrintF {
 		System.out.print("Enter you age: ");
 		age = keyboard.nextInt();
 
-		if (age == 1) {
-			plural = "year";
-		} else {
-			plural = "years";
-		}
+		plural = (age == 1) ? "year" : "years";
 
 		keyboard.close();
 		
